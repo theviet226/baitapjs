@@ -56,7 +56,18 @@
                     </div>
                     <div class="tab-pane fade show " id="bai1" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <h4 class="card--heading">💲 Tính tiền lương nhân viên</h4>
-                        <form class="row gy-3 align-items-center px-2">
+                        <div class="callout callout-info">
+                            <p><i class="fa-solid fa-chart-gantt"></i><b>Sơ đồ 3 khối:</b> </p>
+                            <details>
+                                <summary>Bấm để xem thêm</summary>
+                                <ul>
+                                    <li>Khối 1 : Input <br> số ngày và số lương</li>
+                                    <li>Khối 2 :<br> +B1: Tạo hàm, gắn giá trị vào hàm, gắn hàm vào button <br>+B2: Trong hàm tạo công thức tính <br>+totalLUONG = numDay * numLuong </li>
+                                    <li>Khối 3 : Output <br>Tiền lương </li>
+                                </ul>                                    
+                            </details>
+                        </div>
+                        <form class="row gy-3 align-items-center px-2 mt-3">
                             <div class="col-12 col-lg-4">
                                 <input type="number" class="form-control form__input" id="inputLuong"
                                     placeholder="Nhập lương một ngày">
@@ -67,18 +78,29 @@
                             </div>
 
                             <div class="col-12">
-                                <button class="btn btn--primary me-1 mb-1" type="button" id="btnCalc">Tính
+                                <button class="btn btn-primary me-1 mb-1" type="button" id="btnCalc">Tính
                                     lương</button>
-                                <button class="btn btn--primary me-1 mb-1" type="reset" id="btnReset1">Reset</button>
+                                <button class="btn btn-primary me-1 mb-1" type="reset" id="btnReset1">Reset</button>
                             </div>
-                            <div class="alert alert-success" role="alert">
+                            <div class="alert alert-warning" role="alert">
                                 👉<span id="txtLuong"></span>
                             </div>
                         </form>
                     </div>
                     <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <h4 class="card--heading">📚 Tính giá trị trung bình</h4>
-                        <form class="row gy-3 align-items-center px-2 bai2">
+                        <div class="callout callout-info">
+                            <p><i class="fa-solid fa-chart-gantt"></i><b>Sơ đồ 3 khối:</b> </p>
+                            <details>
+                                <summary>Bấm để xem thêm</summary>
+                                <ul>
+                                    <li>Khối 1 : Input <br> Nhập vào 5 số num1,num2,num3,num4,num5</li>
+                                    <li>Khối 2 :<br> +B1: Tạo hàm, gắn giá trị vào hàm, gắn hàm vào button <br>+B2: Trong hàm tạo công thức tính gttb = (Number(num1) + Number(num2) + Number(num3) + Number(num4) + Number(num5)) / 5 </li>
+                                    <li>Khối 3 : Output <br>Giá trị trung bình </li>
+                                </ul>                                    
+                            </details>
+                        </div>
+                        <form class="row gy-3 align-items-center px-2 bai2 mt-3">
                             <div class="col-12 col-lg-4">
                                 <input type="number" class="form-control form__input" id="num1"
                                     placeholder="Nhập số thứ 1">
@@ -101,36 +123,58 @@
                             </div>
 
                             <div class="col-12">
-                                <button class="btn btn--primary me-1 mb-1" type="button" id="btnTB">Tính trung
+                                <button class="btn btn-primary me-1 mb-1" type="button" id="btnTB">Tính trung
                                     bình</button>
-                                <button class="btn btn--primary me-1 mb-1" type="reset" id="btnReset2">Reset</button>
+                                <button class="btn btn-primary me-1 mb-1" type="reset" id="btnReset2">Reset</button>
                             </div>
-                            <div class="alert alert-success" role="alert">
+                            <div class="alert alert-warning" role="alert">
                                 👉 <span id="txtTB"></span>
                             </div>
                         </form>
                     </div>
                     <div class="tab-pane fade" id="bai3" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <h4 class="card--heading">💱 Quy đổi tiền</h4>
-                        <form class="row gy-3 align-items-center px-2">
+                        <div class="callout callout-info">
+                            <p><i class="fa-solid fa-chart-gantt"></i><b>Sơ đồ 3 khối:</b> </p>
+                            <details>
+                                <summary>Bấm để xem thêm</summary>
+                                <ul>
+                                    <li>Khối 1 : Input <br> Nhập vào số tiền numMoney</li>
+                                    <li>Khối 2 :<br> +B1: Tạo hàm, gắn giá trị vào hàm, gắn hàm vào button <br>+B2: Trong hàm tạo công thức tính swap = (Number (numMoney) * 23500) </li>
+                                    <li>Khối 3 : Output <br>Tiền quy đổi  </li>
+                                </ul>                                    
+                            </details>
+                        </div>
+                        <form class="row gy-3 align-items-center px-2 mt-3">
                             <div class="col-12 col-lg-4">
                                 <input type="number" class="form-control form__input" id="usd"
                                     placeholder="Nhập số tiền USD">
                             </div>
 
                             <div class="col-12">
-                                <button class="btn btn--primary me-1 mb-1" type="button" id="btnCurrency">Quy đổi
+                                <button class="btn btn-primary me-1 mb-1" type="button" id="btnCurrency">Quy đổi
                                     tiền</button>
-                                <button class="btn btn--primary me-1 mb-1" type="reset" id="btnReset3">Reset</button>
+                                <button class="btn btn-primary me-1 mb-1" type="reset" id="btnReset3">Reset</button>
                             </div>
-                            <div class="alert alert-success" role="alert">
+                            <div class="alert alert-warning" role="alert">
                                 👉 <span id="txtCurrency"></span>
                             </div>
                         </form>
                     </div>
                     <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <h4 class="card--heading">📏 Tính diện tích, chu vi hình chữ nhật</h4>
-                        <form class="row gy-3 align-items-center px-2">
+                        <div class="callout callout-info">
+                            <p><i class="fa-solid fa-chart-gantt"></i><b>Sơ đồ 3 khối:</b> </p>
+                            <details>
+                                <summary>Bấm để xem thêm</summary>
+                                <ul>
+                                    <li>Khối 1 : Input <br> Nhập vào chiều dài , chiều rộng</li>
+                                    <li>Khối 2 :<br> +B1: Tạo hàm, gắn giá trị vào hàm, gắn hàm vào button <br>+B2: Trong hàm tạo công thức tính : <br> -DT = dai * rong <br>-CV = (Number(dai) + Number(rong))*2 </li>
+                                    <li>Khối 3 : Output <br>Diện tích, chu vi </li>
+                                </ul>                                    
+                            </details>
+                        </div>
+                        <form class="row gy-3 align-items-center px-2 mt-3">
                             <div class="col-12 col-lg-4">
                                 <input type="number" class="form-control form__input" id="width"
                                     placeholder="Nhập chiều dài">
@@ -141,27 +185,38 @@
                             </div>
 
                             <div class="col-12">
-                                <button class="btn btn--primary me-1 mb-1" type="button" id="btnCal">Tính</button>
-                                <button class="btn btn--primary me-1 mb-1" type="reset" id="btnReset4">Reset</button>
+                                <button class="btn btn-primary me-1 mb-1" type="button" id="btnCal">Tính</button>
+                                <button class="btn btn-primary me-1 mb-1" type="reset" id="btnReset4">Reset</button>
                             </div>
-                            <div class="alert alert-success" role="alert">
+                            <div class="alert alert-warning" role="alert">
                                 👉 <span id="txtCal"></span>
                             </div>
                         </form>
                     </div>
                     <div class="tab-pane fade" id="bai5" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <h4 class="card--heading">🧮 Tính tổng 2 ký số</h4>
-                        <form class="row gy-3 align-items-center px-2">
+                        <div class="callout callout-info">
+                            <p>🗒<b>Sơ đồ 3 khối:</b> </p>
+                            <details>
+                                <summary>Bấm để xem thêm</summary>
+                                <ul>
+                                    <li>Khối 1 : Input <br> Nhập số nguyên dương number có 2 chữ số</li>
+                                    <li>Khối 2 :<br> +B1: Tạo hàm, gắn giá trị vào hàm, gắn hàm vào button <br>+B2: tách số hàng chục theo công thức ten=Math.floor(number/10) <br> +B3:tách số hàng đơn vị theo công thức unit= number%10 <br> +B4:Trong hàm tạo công thức tính sum = ten + unit   </li>
+                                    <li>Khối 3 : Output <br>Tổng 2 đối số  </li>
+                                </ul>                                    
+                            </details>
+                        </div>
+                        <form class="row gy-3 align-items-center px-2 mt-3">
                             <div class="col-12 col-lg-4">
                                 <input type="number" class="form-control form__input" id="number"
                                     placeholder="Nhập số có 2 chữ số">
                             </div>
                             <div class="col-12">
-                                <button class="btn btn--primary me-1 mb-1" type="button" id="btnSum">Tính
+                                <button class="btn btn-primary me-1 mb-1" type="button" id="btnSum">Tính
                                     tổng</button>
-                                <button class="btn btn--primary me-1 mb-1" type="reset" id="btnReset5">Reset</button>
+                                <button class="btn btn-primary me-1 mb-1" type="reset" id="btnReset5">Reset</button>
                             </div>
-                            <div class="alert alert-success" role="alert">
+                            <div class="alert alert-warning" role="alert">
                                 👉 <span id="txtSum"></span>
                             </div>
                         </form>
