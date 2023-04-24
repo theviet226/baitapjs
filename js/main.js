@@ -51,7 +51,7 @@ document.getElementById("btnTB").onclick = calcTrungBinh;
 //Tiền quy đổi 
 function swapMoney(){
     var numMoney = document.getElementById("usd").value;
-    console.log(num1);
+    console.log(numMoney);
     var swap = (Number (numMoney) * 23500);
     console.log(swap);
     document.getElementById("txtCurrency").innerHTML = "Tiên quy đổi: " + swap.toLocaleString() +"VNĐ";
@@ -102,37 +102,26 @@ function calcSum(){
 document.getElementById("btnSum").onclick = calcSum;
 
 function reset(){
-    document.getElementById("txtLuong").value;
-    console.log(txtLuong);
     document.getElementById("txtLuong").innerHTML = "";
 }
 document.getElementById("btnReset1").onclick = reset;
 
 function reset2(){
-    document.getElementById("txtTB").value;
-    console.log(txtTB);
     document.getElementById("txtTB").innerHTML = "";
 }
 document.getElementById("btnReset2").onclick = reset2;
 
 function reset3(){
-    document.getElementById("txtCurrency").value;
-    console.log(txtCurrency);
     document.getElementById("txtCurrency").innerHTML = "";
 }
 document.getElementById("btnReset3").onclick = reset3;
 
 function reset4(){
-    document.getElementById("txtCal").value;
-    console.log(txtCal);
     document.getElementById("txtCal").innerHTML = "";
-
 }
 document.getElementById("btnReset4").onclick = reset4;
 
 function reset5(){
-    document.getElementById("txtSum").value;
-    console.log(txtSum);
     document.getElementById("txtSum").innerHTML = "";
 }
 document.getElementById("btnReset5").onclick = reset5;
