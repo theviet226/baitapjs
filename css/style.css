@@ -119,8 +119,25 @@ li{
 }
 .callout li{
     font-size: 17px;
+    color: #000;
 }
 .callout i{
-    color: #ffeb3b;
+    color: #ffc107;
     font-size: 20px;
 }
+.callout {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(255,255,255,0.5);
+    border-left-width: 5px;
+    border-radius:  5px;
+    background-color: rgb(255,255,255,0.5);
+    color: #31344b;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1
+}
+
+.callout-info {
+    border-left-color: #ffeb3b;
+}
+
